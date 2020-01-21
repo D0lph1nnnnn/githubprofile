@@ -1,14 +1,43 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" rel="stylesheet" />
     <title>Artjom Zurbenko GitHub Profile</title>
 </head>
 <body>
     <script src="github.js"></script>
     <script src="ui.js"></script>
     <script src="app.js"></script>
+
+    <div class="row">
+        <div class="column">
+            <img src="img/img_nature.jpg" alt="Nature" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="img/img_snow.jpg" alt="Snow" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="img/img_mountains.jpg" alt="Mountains" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="img/img_lights.jpg" alt="Lights" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <!-- The expanding image container -->
+    <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+
+        <!-- Image text -->
+        <div id="imgtext"></div>
+    </div>
+
 </body>
 </html>
